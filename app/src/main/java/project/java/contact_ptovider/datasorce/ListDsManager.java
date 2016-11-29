@@ -21,7 +21,7 @@ public class ListDsManager implements IDataSource
 
 
     @Override
-    public boolean addBusiness(ContentValues business)
+    public void addBusiness(ContentValues business)
     {
         business.putAll(business);
         return true;
