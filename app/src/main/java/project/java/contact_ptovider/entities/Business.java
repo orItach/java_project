@@ -9,31 +9,75 @@ import android.provider.ContactsContract;
  */
 
 public class Business {
-    long ID;
-    String name;
-    Address address;
-    CommonDataKinds.Phone phoneNum;
-    CommonDataKinds.Email email;
-    String link;
+    public static int countBus=0;
+    private long ID;
+    private String name;
+    private String country;
+    private String city;
+    private String street;
+    private String phoneNum;
+    private String email;
+    private String link;
 
-    public Business(long ID, String name, Address address, CommonDataKinds.Phone phoneNum, CommonDataKinds.Email email, String link) {
+    public Business(long ID, String name, String country, String city, String street, String phoneNum, String email, String link) {
         this.ID = ID;
         this.name = name;
-        this.address = address;
+        this.country = country;
+        this.city = city;
+        this.street = street;
         this.phoneNum = phoneNum;
         this.email = email;
         this.link = link;
     }
 
 
-
     //region get and set
-    public long getID() {
-        return ID;
+    public String getLink() {
+        return link;
     }
 
-    public void setID(long ID) {
-        this.ID = ID;
+    public void setLink(String link) {
+        this.link = link;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhoneNum() {
+        return phoneNum;
+    }
+
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     public String getName() {
@@ -44,37 +88,14 @@ public class Business {
         this.name = name;
     }
 
-    public Address getAddress() {
-        return address;
+    public long getID() {
+        return ID;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
+    public void setID(long ID) {
+        this.ID = ID;
     }
 
-    public CommonDataKinds.Phone getPhoneNum() {
-        return phoneNum;
-    }
-
-    public void setPhoneNum(CommonDataKinds.Phone phoneNum) {
-        this.phoneNum = phoneNum;
-    }
-
-    public CommonDataKinds.Email getEmail() {
-        return email;
-    }
-
-    public void setEmail(CommonDataKinds.Email email) {
-        this.email = email;
-    }
-
-    public String getLink() {
-        return link;
-    }
-
-    public void setLink(String link) {
-        this.link = link;
-    }
     //endregion
 }
 

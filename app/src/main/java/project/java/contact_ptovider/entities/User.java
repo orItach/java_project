@@ -6,10 +6,10 @@ package project.java.contact_ptovider.entities;
 
 public class User
 {
-    long userNum;
-    String name;
-    String password;
-    Boolean authorization;//0 for nothing, 1 for admin
+    private long userNum;
+    private String name;
+    private String password;
+    private Boolean authorization;//0 for nothing, 1 for admin
 
     public User(long userNum, String name, String password, Boolean authorization) {
         this.userNum = userNum;
