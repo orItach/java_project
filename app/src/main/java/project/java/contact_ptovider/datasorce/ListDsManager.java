@@ -18,7 +18,7 @@ import project.java.contact_ptovider.entities.*;
 
 public class ListDsManager implements IDataSource
 {
-   private boolean busCount =true;
+   private boolean busCount =false;
    private boolean actCount =true;
    private boolean userCount =true;
    private static ArrayList<Business> BusList=new ArrayList<Business>(5);
