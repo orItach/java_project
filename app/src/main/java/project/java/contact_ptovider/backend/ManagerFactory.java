@@ -15,8 +15,6 @@ public class ManagerFactory//implemnt singeltone
         {
             case 1:
                 return  new ListDsManager();
-           case 2:
-               return new ListDsManager();
             default:
                 return null;
         }
